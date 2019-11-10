@@ -1,0 +1,5 @@
+1) pip install pyside2
+Дизайнер тут
+C:\PythonDev\Python36-32\Lib\site-packages\PySide2\designer.exe
+
+2) pip install auto-py-to-exe

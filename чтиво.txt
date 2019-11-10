@@ -1,0 +1,18 @@
+python -m PyQt5.uic.pyuic -x test.ui -o test.py, где test.ui - исходный файл, а test.py - результат преобразования.
+
+
+
+python -m PyQt5.uic.pyuic -x [FILENAME].ui -o [FILENAME].py
+
+
+
+
+
+Импортируешь py-файл
+import mydesign
+В классе сначала наследуется, а потом инициализируется файл с дизайном:
+
+class mywindow(mydesign.Ui_MainWindow, QtWidgets.QMainWindow):
+    def __init__(self):
+        super(mywindow, self).__init__()
+        self.setupUi(self)  # initialize design from import file
